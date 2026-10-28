@@ -67,7 +67,63 @@ namespace Topic_8_Practice
             Console.WriteLine();
             Console.WriteLine();
 
-            //Part 3
+            
+
+            for (int i = 0; i < numbers.Count ; i++)
+            {
+                numbers[i] = numbers[i] * 2;
+            }
+
+            Console.WriteLine("Numbers Doubled: ");
+
+            for (int i = 0; i < numbers.Count;  i++)
+            {
+                Console.WriteLine(numbers[i] + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] < 50)
+                {
+                    numbers[i] = 0;
+                }
+            }
+
+            Console.WriteLine("numbers less than 50 changed to zero: ");
+
+            for (int i = 0;i < numbers.Count; i++)
+            {
+                Console.Write(numbers[i] + " ");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Final List");
+
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                Console.Write(numbers[i] + " ");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int zeroCount = 0; 
+
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] == 0)
+                {
+                    zeroCount++;
+                }
+            }
+
+            Console.WriteLine("Numbers of zeros: " + zeroCount);
+
+            Console.ReadLine();
         }
     }
 }
